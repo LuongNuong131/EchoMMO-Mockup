@@ -125,7 +125,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* CSS GIỮ NGUYÊN (Đã có trong file cũ) */
+/* CSS Đã sửa lỗi: BỎ height: 100vh; trong .dashboard-wrapper */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&display=swap");
 
 :root {
@@ -145,6 +145,7 @@ onMounted(() => {
   color: var(--text-light);
   font-family: "Noto Serif TC", serif;
   position: relative;
+  /* Giữ hidden vì scroll được quản lý bởi MainLayout */
   overflow: hidden;
 }
 
@@ -157,7 +158,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 100vh;
+  /* FIX: Loại bỏ height: 100vh; */
 }
 
 .ink-bg-layer {
